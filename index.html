@@ -1,34 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Security Update</title>
+    <title>System Update</title>
     <script>
-        function goFullScreen() {
-            let elem = document.documentElement;
-            if (elem.requestFullscreen) {
-                elem.requestFullscreen();
-            } else if (elem.mozRequestFullScreen) { // Firefox
-                elem.mozRequestFullScreen();
-            } else if (elem.webkitRequestFullscreen) { // Chrome, Safari, Edge
-                elem.webkitRequestFullscreen();
-            } else if (elem.msRequestFullscreen) { // IE
-                elem.msRequestFullscreen();
-            }
-        }
-
         window.onload = function() {
-            goFullScreen(); // Try to fullscreen first
-            setTimeout(function() {
-                window.location.href = "https://rickroll.com"; // Change this to your prank URL!
-            }, 3000); // Wait 3 seconds before redirecting
+            window.location.href = "https://rickroll.com"; // Change this to your prank link!
         };
     </script>
 </head>
 <body>
     <h1>🔄 Updating system files...</h1>
     <p>Do not turn off your computer.</p>
-    <button onclick="goFullScreen()">Click to Continue</button> <!-- Extra safety if auto-fullscreen is blocked -->
 </body>
 </html>
